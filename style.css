@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header, footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.controls {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+.content {
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6347;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+/* CSS Animation for the box */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 1s ease;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark button {
+    background-color: #666;
+}
+
+body.dark button:hover {
+    background-color: #888;
+}
+
+body.dark .box {
+    background-color: #4682b4;
+}
+
+footer {
+    color: #666;
+}
+
+body.dark footer {
+    color: #aaa;
+}
